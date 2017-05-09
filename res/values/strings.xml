@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">PasswordGenerator</string>
+    <string name="intro_title">Tap the Screen For A New Password!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Password Generator</string>
+    <string name="go_button">Tap Screen To Generate!</string>
+    <string name="allowUps">Allow Uppercase Characters</string>
+    <string name="instructions">Password length (100 or Fewer)</string>
+    <string name="password">password</string>
+    <string name="final_password">"[Your Password Here]"</string>
+    <string name="allow_nums">Allow Numbers</string>
+    <string name="allow_specials">Allow Special Characters</string>
+    <string name="password_label">Your Password is:</string>
+
+</resources>

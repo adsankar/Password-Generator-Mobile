@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    android:clickable="true"
+    android:id="@+id/MainLayout">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/title_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:textIsSelectable="false" />
+
+    <CheckBox
+        android:id="@+id/allowNums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/allowUps"
+        android:layout_below="@+id/allowUps"
+        android:text="@string/allow_nums"
+        android:textSize="@dimen/instruction_size"
+        android:onClick="onCheckboxClicked" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:maxLength="3"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/allowSpecs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/allowNums"
+        android:layout_below="@+id/allowNums"
+        android:text="@string/allow_specials"
+        android:textSize="@dimen/instruction_size"
+        android:onClick="onCheckboxClicked" />
+
+    <CheckBox
+        android:id="@+id/allowUps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/allowUps"
+        android:textSize="@dimen/instruction_size"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/instructions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/instruction_size"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/final_password"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_label"
+        android:id="@+id/textView"
+        android:textSize="@dimen/instruction_size"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/allowSpecs"
+        android:layout_alignLeft="@+id/editText" />
+
+</RelativeLayout>
